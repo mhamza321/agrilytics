@@ -1,0 +1,82 @@
+/* ================================= Background Top =================================== */
+.bg-primary {
+    background-color: #006837 !important;
+  }
+
+
+/* ================================= BTN OUTLINE UPDATE ===============================*/
+.navigation .btn-outline{
+  color: white;
+  border-color: white;
+}
+.navigation .btn-outline:hover, .navigation.navbar-sticky .btn-outline:hover {
+  -webkit-box-shadow: -1px 3px 10px 0 #333 !important;
+          box-shadow: -1px 3px 10px 0 #333 !important;
+}
+.navigation.navbar-sticky .btn-outline{
+  color: #1B6F62;
+  border-color: #1B6F62;
+}
+
+.navigation.navbar-sticky .btn-outline:hover{
+  background-color: #1B6F62;
+  border-color: #1B6F62;
+}
+
+/* ==================================== BTN SOLID UPDATE ================================= */
+.navigation .btn-solid:hover {
+  color: white;
+  background-color: #1B6F62;
+  border-color: white;
+  -webkit-box-shadow: -1px 3px 10px 0 #333 !important;
+          box-shadow: -1px 3px 10px 0 #333 !important;
+}
+
+.navigation.navbar-sticky .btn-solid{
+  border-color: #1B6F62;
+}
+.navigation.navbar-sticky .btn-solid:hover{
+  color: #1B6F62;
+  background-color: white;
+  border-color: #1B6F62;
+}
+
+.btn-primary{
+  color: #ffffff;
+  background-color: #1B6F62;
+  border-color: #1B6F62;
+}
+
+.btn-primary:hover{
+  color: #1B6F62;
+  background-color: white;
+  border-color: #1B6F62;
+}
+
+.text-primary{
+  color:#1B6F62 !important;
+}
+
+
+/* ================================= Card Hover ================================= */
+.shadow-hover {
+  -webkit-transition: -webkit-box-shadow 0.3s ease-in-out;
+  transition: -webkit-box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+}
+
+.shadow-hover:hover {
+  -webkit-box-shadow: -1px 3px 15px 0 #1B6F62 !important;
+          box-shadow: -1px 3px 15px 0 #1B6F62 !important;
+          background-color: #006837;
+
+}
+
+.card-body:hover h5{
+  color: #ffffff;
+}
+
+.card-body:hover .text-secondary{
+  color: #ffffff;
+}

@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="css/dashcore.css">
     <link rel="stylesheet" href="css/rtl.css">
     <link rel="stylesheet" href="css/demo.css">
+    <link rel="stylesheet" href="css/custom.css">
     <!-- endinject -->
 </head>
 
@@ -35,24 +36,156 @@
         <div class="container">
             <ul class="st-nav-menu nav navbar-nav">
                 <li class="st-nav-section nav-item"><a href="#main" class="navbar-brand"><img
-                            src="img/logos/agri_logo.png" alt="Dashcore"
-                            class="logo logo-sticky d-inline-block d-md-none"> <img src="img/logos/agri_logo.png"
-                            alt="Dashcore" class="logo d-none d-md-inline-block"></a></li>
-                <li class="st-nav-section st-nav-primary nav-item"><a class="st-root-link nav-link"
-                        href="index.html">Home</a> <a class="st-root-link item-products st-has-dropdown nav-link"
-                        data-dropdown="blocks">Blocks</a> <a class="st-root-link item-products st-has-dropdown nav-link"
-                        data-dropdown="pages">Pages</a> <a class="st-root-link item-company st-has-dropdown nav-link"
-                        data-dropdown="components">UI Components</a> <a
-                        class="st-root-link item-blog st-has-dropdown nav-link" data-dropdown="blog">Blog</a> <a
+                            src="img/logos/agri_logo.png" alt="AgriLytics"
+                            class="logo logo-sticky d-inline-block d-md-none"> <img src="img/logos/agri_transparent.png"
+                            alt="AgriLytics" class="logo d-none d-md-inline-block"></a></li>
+                <li class="st-nav-section st-nav-primary nav-item">
+                    <a class="st-root-link nav-link" href="index.html">Home</a>
+                    <a class="st-root-link nav-link" href="#about">About</a>
+                    <a class="st-root-link nav-link" href="#features">Features</a>
+                    <a class="st-root-link nav-link" href="#contact_us">Contact Us</a>
+                    <!-- <a class="st-root-link item-products st-has-dropdown nav-link" data-dropdown="blocks">Blocks</a>
+                    <a class="st-root-link item-products st-has-dropdown nav-link" data-dropdown="pages">Pages</a>
+                    <a class="st-root-link item-company st-has-dropdown nav-link" data-dropdown="components">UI
+                        Components</a>
+                    <a class="st-root-link item-blog st-has-dropdown nav-link" data-dropdown="blog">Blog</a> <a
                         class="st-root-link item-shop st-has-dropdown nav-link" href="shop/"
-                        data-dropdown="shop">Shop</a></li>
-                <li class="st-nav-section st-nav-secondary nav-item"><a class="btn btn-rounded btn-outline me-3 px-3"
-                        href="login.html" target="_blank"><i
-                            class="fas fa-sign-in-alt d-none d-md-inline me-md-0 me-lg-2"></i> <span
-                            class="d-md-none d-lg-inline">Login</span> </a><a class="btn btn-rounded btn-solid px-3"
-                        href="signup.html" target="_blank"><i
-                            class="fas fa-user-plus d-none d-md-inline me-md-0 me-lg-2"></i> <span
-                            class="d-md-none d-lg-inline">Signup</span></a></li><!-- Mobile Navigation -->
+                        data-dropdown="shop">Shop</a> -->
+                </li>
+                <li class="st-nav-section st-nav-secondary nav-item">
+                    <!-- <a class="btn btn-outline-primary modal-popup" href="#modal-dialog"
+                        data-effect="mfp-newspaper">newspaper </a> -->
+                    <a class="btn btn-rounded btn-outline me-3 px-3 modal-popup" href="#login-model"
+                        data-effect="mfp-newspaper">
+                        <i class="fas fa-sign-in-alt d-none d-md-inline me-md-0 me-lg-2"></i>
+                        <span class="d-md-none d-lg-inline">Login</span>
+                    </a>
+                    <!-- <a class="btn btn-rounded btn-outline me-3 px-3" href="login.html" target="_blank">
+                        <i class="fas fa-sign-in-alt d-none d-md-inline me-md-0 me-lg-2"></i>
+                        <span class="d-md-none d-lg-inline">Login</span>
+                    </a> -->
+                    <a class="btn btn-rounded btn-solid px-3 modal-popup" href="#signup-model"
+                        data-effect="mfp-newspaper">
+                        <i class="fas fa-user-plus d-none d-md-inline me-md-0 me-lg-2"></i>
+                        <span class="d-md-none d-lg-inline">Signup</span>
+                    </a>
+                    <!-- <a class="btn btn-rounded btn-solid px-3" href="signup.html" target="_blank">
+                        <i class="fas fa-user-plus d-none d-md-inline me-md-0 me-lg-2"></i>
+                        <span class="d-md-none d-lg-inline">Signup</span>
+                    </a> -->
+                </li>
+                <!-- Login Model start -->
+                <div id="login-model" class="section mfp-with-anim mfp-hide popup-wrapper bg-contrast">
+                    <div class="container">
+                        <center>
+                            <h2>Login</h2>
+                        </center>
+                        <!--<p>This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate
+                            the look and feel of finished, typeset text. Only for show. He who searches for meaning here
+                            will be sorely disappointed.</p> -->
+
+                        <div class="row">
+                            <div class="col-md-6 mx-auto">
+                                <!-- <p class="alert alert-icon alert-primary mb-5"><i class="icon fas fa-info-circle"></i>
+                                    <small>The following example shows a modal form with auto focused input</small>
+                                </p> -->
+                                <form action="srv/signup.php" method="post" class="form-signup form cozy"
+                                    name="form-signup" data-response-message-animation="slide-in-up">
+                                    <div class="form-group"><label for="signup_username" class="form-label">User
+                                            name</label> <input type="text" name="Signup[username]" id="signup_username"
+                                            class="form-control" placeholder="Enter your desired user name" required>
+                                    </div>
+                                    <div class="form-group"><label for="signup_email" class="form-label">Email
+                                            address</label>
+                                        <div id="emailHelp" class="form-text text-secondary mt-0 mb-2 italic"><i
+                                                class="fas fa-info-circle me-2"></i> We'll never share your email with
+                                            anyone else.</div><input type="email" name="Signup[email]" id="signup_email"
+                                            class="form-control" placeholder="Valid email address" required>
+                                    </div>
+                                    <div class="form-group"><label for="signup_password"
+                                            class="form-label">Password</label> <input type="password"
+                                            name="Signup[password]" id="signup_password" class="form-control"
+                                            placeholder="Password" required></div>
+                                    <div class="form-group">
+                                        <div class="d-grid"><button id="signup-submit" data-loading-text="Signing up..."
+                                                name="submit" type="submit"
+                                                class="btn btn-rounded btn-primary mt-4">Login</button></div>
+                                        <hr>
+                                        <p class="small">By clicking this button you agree our <a href="#"
+                                                class="dotted">Privacy Policy</a> &nbsp;&amp;&nbsp; <a href="#"
+                                                class="dotted">Terms Of Service</a></p>
+                                    </div>
+                                </form>
+                                <div class="response-message"><i class="fas fa-envelope font-lg"></i>
+                                    <p class="font-md m-0">Check your email</p>
+                                    <p class="response">We sent you an email with a link to get started. You’ll be in
+                                        your account in no time.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Login Model End -->
+
+                <!-- Signup Model start -->
+                <div id="signup-model" class="section mfp-with-anim mfp-hide popup-wrapper bg-contrast">
+                    <div class="container">
+                        <center>
+                            <h2>Sign Up</h2>
+                        </center>
+                        <!--<p>This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate
+                            the look and feel of finished, typeset text. Only for show. He who searches for meaning here
+                            will be sorely disappointed.</p> -->
+
+                        <div class="row">
+                            <div class="col-md-6 mx-auto">
+                                <!-- <p class="alert alert-icon alert-primary mb-5"><i class="icon fas fa-info-circle"></i>
+                                    <small>The following example shows a modal form with auto focused input</small>
+                                </p> -->
+                                <form action="srv/signup.php" method="post" class="form-signup form cozy"
+                                    name="form-signup" data-response-message-animation="slide-in-up">
+                                    <div class="form-group"><label for="signup_username" class="form-label">User
+                                            name</label> <input type="text" name="Signup[username]" id="signup_username"
+                                            class="form-control" placeholder="Enter your desired user name" required>
+                                    </div>
+                                    <div class="form-group"><label for="signup_email" class="form-label">Email
+                                            address</label>
+                                        <div id="emailHelp" class="form-text text-secondary mt-0 mb-2 italic"><i
+                                                class="fas fa-info-circle me-2"></i> We'll never share your email with
+                                            anyone else.</div><input type="email" name="Signup[email]" id="signup_email"
+                                            class="form-control" placeholder="Valid email address" required>
+                                    </div>
+                                    <div class="form-group"><label for="signup_password"
+                                            class="form-label">Password</label> <input type="password"
+                                            name="Signup[password]" id="signup_password" class="form-control"
+                                            placeholder="Password" required></div>
+                                    <div class="form-group"><label for="signup_password" class="form-label">Confirm
+                                            Password</label> <input type="password" name="Signup[password]"
+                                            id="signup_password" class="form-control" placeholder="Password" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="d-grid"><button id="signup-submit" data-loading-text="Signing up..."
+                                                name="submit" type="submit"
+                                                class="btn btn-rounded btn-primary mt-4">Create account</button></div>
+                                        <hr>
+                                        <p class="small">By clicking this button you agree our <a href="#"
+                                                class="dotted">Privacy Policy</a> &nbsp;&amp;&nbsp; <a href="#"
+                                                class="dotted">Terms Of Service</a></p>
+                                    </div>
+                                </form>
+                                <div class="response-message"><i class="fas fa-envelope font-lg"></i>
+                                    <p class="font-md m-0">Check your email</p>
+                                    <p class="response">We sent you an email with a link to get started. You’ll be in
+                                        your account in no time.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Signup Model End -->
+
+
+                <!-- Mobile Navigation -->
                 <li class="st-nav-section st-nav-mobile nav-item"><button class="st-root-link navbar-toggler"
                         type="button"><span class="icon-bar"></span> <span class="icon-bar"></span> <span
                             class="icon-bar"></span></button>
@@ -319,9 +452,8 @@
                     <div class="col-lg-5 mx-auto text-center text-lg-start">
                         <h1 class="light display-4 text-contrast">Welcome to <span
                                 class="bold d-block">Agrilytics</span></h1>
-                        <p class="text-contrast lead my-5">It all begins by choosing the right tools, start with a
-                            complete set of design blocks to achieve your next success.</p><a href="#"
-                            class="btn btn-contrast btn-lg btn-rounded px-5 bw-2">Try it free</a>
+                        <p class="text-contrast lead my-5">Bringing Ai into Agriculture with Agrilytics</p>
+                        <!-- <a href="#" class="btn btn-contrast btn-lg btn-rounded px-5 bw-2">Try it free</a> -->
                     </div>
                     <div class="col-lg-6 col-md-9 mx-md-auto mx-lg-0 pe-lg-0 position-relative">
                         <div class="device-twin free-width align-items-center mt-4 mt-lg-0">
@@ -331,7 +463,7 @@
                             <div class="front iphone-x absolute d-none d-lg-block" data-aos="fade-right"
                                 style="left: -5.5rem; bottom: -3.5rem;">
                                 <div class="screen">
-                                    <img src="img/screens/app/1.png" alt="...">
+                                    <img src="img/screens/app/app-ss.jpeg" alt="...">
                                 </div>
                                 <div class="notch"></div>
                             </div>
@@ -341,7 +473,7 @@
             </div>
         </header>
         <!-- ./How it works -->
-        <section id="features" class="section how-it-works">
+        <section id="about" class="section how-it-works">
             <div class="shapes-container">
                 <div class="shape shape-ring" data-aos="fade-right">
                     <div></div>
@@ -403,10 +535,9 @@
                         <div class="card border-0 shadow-sm shadow-hover">
                             <div class="card-body py-4"><i data-feather="lock" width="36" height="36"
                                     class="text-info mb-2"></i>
-                                <h5 class="bold">Download satellite imagery</h5>
-                                <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab
-                                    dolores ea fugiat nesciunt quisquam. Assumenda dolore error nulla pariatur
-                                    voluptatem?</p>
+                                <h5 class="bold bg-card">Download satellite imagery</h5>
+                                <p class="text-secondary">Using AgriLytics, one can download any satellite imagery like
+                                    Sentinel-2, Senitinel-3, Planetscope etc</p>
                             </div>
                         </div>
                     </div>
@@ -415,9 +546,8 @@
                             <div class="card-body py-4"><i data-feather="wind" width="36" height="36"
                                     class="text-info mb-2"></i>
                                 <h5 class="bold">Preprocessing of satellite imagery</h5>
-                                <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab
-                                    dolores ea fugiat nesciunt quisquam. Assumenda dolore error nulla pariatur
-                                    voluptatem?</p>
+                                <p class="text-secondary">Once, the satellite imagery is download, the next step is to
+                                    preporcess it to make it ready for feeding into the Ai Model.</p>
                             </div>
                         </div>
                     </div>
@@ -426,9 +556,8 @@
                             <div class="card-body py-4"><i data-feather="box" width="36" height="36"
                                     class="text-info mb-2"></i>
                                 <h5 class="bold">Use deep learning models</h5>
-                                <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab
-                                    dolores ea fugiat nesciunt quisquam. Assumenda dolore error nulla pariatur
-                                    voluptatem?</p>
+                                <p class="text-secondary">After Preprocessing, Deep learning models are trained based on
+                                    the provided data or imagery.</p>
                             </div>
                         </div>
                     </div>
@@ -437,9 +566,8 @@
                             <div class="card-body py-4"><i data-feather="sliders" width="36" height="36"
                                     class="text-info mb-2"></i>
                                 <h5 class="bold">Crop classification</h5>
-                                <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab
-                                    dolores ea fugiat nesciunt quisquam. Assumenda dolore error nulla pariatur
-                                    voluptatem?</p>
+                                <p class="text-secondary">After training the Ai Model, region wise or uc wise crops are
+                                    classified.</p>
                             </div>
                         </div>
                     </div>
@@ -448,9 +576,8 @@
                             <div class="card-body py-4"><i data-feather="target" width="36" height="36"
                                     class="text-info mb-2"></i>
                                 <h5 class="bold">Estimate yield of crops</h5>
-                                <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab
-                                    dolores ea fugiat nesciunt quisquam. Assumenda dolore error nulla pariatur
-                                    voluptatem?</p>
+                                <p class="text-secondary">Not only the crops are classified but the yields of different
+                                    are also estimated.</p>
                             </div>
                         </div>
                     </div>
@@ -459,9 +586,8 @@
                             <div class="card-body py-4"><i data-feather="bar-chart" width="36" height="36"
                                     class="text-info mb-2"></i>
                                 <h5 class="bold">Generate region wise results</h5>
-                                <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab
-                                    dolores ea fugiat nesciunt quisquam. Assumenda dolore error nulla pariatur
-                                    voluptatem?</p>
+                                <p class="text-secondary">The results are generated according to the need. Results can
+                                    be genereated region wise or uc wise.</p>
                             </div>
                         </div>
                     </div>
@@ -471,8 +597,8 @@
         <section class="section bg-light">
             <div class="container bring-to-front">
                 <div class="row gap-y">
-                    <div class="col-md-6">
-                        <div class="rounded bg-primary-gradient shadow">
+                    <div class="col-md-6 bg-contrast mt-4">
+                        <!-- <div class="rounded bg-primary-gradient shadow">
                             <div class="d-flex flex-column align-items-center py-3"><img src="img/bg/asset-1.svg"
                                     class="img-responsive w-50" alt=""></div>
                         </div>
@@ -507,20 +633,39 @@
                                                 class="d-none small">Invoice</span></a></nav>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
+                        <h1>Agrilytics Home Page</h1>
+                        <p class="">
+                            After successful login the user is redirected to the home page of the application. The
+                            following figure shows the home page of the web-based application of beta version of
+                            application. The page provides several form elements to user. The description of each
+                            element provided by the home page is defined below. <br>
+                        <ol>
+                            <li>A dropdown to select a province</li>
+                            <li>A dropdown to select a district</li>
+                            <li>A dropdown to select a tehsil</li>
+                            <li>A dropdown to select a year</li>
+                            <li>A search button to perform search for areas according to filter</li>
+                            <li>After search is performed, shapes of all Union Councils (UCs) are displayed over google
+                                map. User can select any UC of interest for generating results for crop classification.
+                            </li>
+                            <li>A button for starting process of classification to generate results which will be
+                                displayed on results page of our application.</li>
+                        </ol>
+
+                        </p>
                     </div>
                     <div class="col-md-6 ms-md-auto text-center text-md-start">
                         <div class="mb-5"><span
                                 class="badge bg-info text-contrast rounded-pill shadow-box bold py-2 px-4">Simple and
                                 transparent</span>
-                            <h2 class="mt-3">Bring your application to life</h2>
-                            <p class="lead text-secondary">DashCore includes an outstanding starter Admin Dashboard. You
-                                can start developing right away your web application.</p>
+                            <h2 class="mt-3">Bring AgriLytics to life</h2>
+                            <p class="lead text-secondary">Let's start using AgriLytics and make your life easier.</p>
                         </div>
                         <div class="swiper-container" data-sw-navigation="#sw-nav-1" data-sw-navigation-active="active">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <figure class="shadow-box"><img src="img/screens/dash/inbox.png" alt=""
+                                    <figure class="shadow-box"><img src="img/dash2.jpg" alt=""
                                             class="img-responsive rounded"></figure>
                                 </div>
                                 <div class="swiper-slide">
@@ -537,7 +682,7 @@
                 </div>
             </div>
         </section><!-- ./Why DashCore -->
-        <section class="section bg-light">
+        <!-- <section class="section bg-light">
             <div class="container bring-to-front pb-0">
                 <div class="section-heading text-center w-75 mx-auto">
                     <h2>Why Dashcore template?</h2>
@@ -583,8 +728,9 @@
                     </div>
                 </div>
             </div>
-        </section><!-- ./How to Videos -->
-        <section class="section bg-darker edge top-left">
+        </section> -->
+        <!-- ./How to Videos -->
+        <!-- <section class="section bg-darker edge top-left">
             <div class="container pt-8">
                 <div class="section-heading text-center w-75 mx-auto"><i data-feather="film" width="36" height="36"></i>
                     <h2 class="text-contrast bold">How to videos</h2>
@@ -636,14 +782,15 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <div class="position-relative">
+        </section> -->
+        <!-- <div class="position-relative">
             <div class="shape-divider shape-divider-bottom shape-divider-fluid-x text-light"><svg viewBox="0 0 2880 48"
                     xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z"></path>
                 </svg></div>
-        </div><!-- ./Partners -->
-        <section class="partners bg-light">
+        </div> -->
+        <!-- ./Partners -->
+        <!-- <section class="partners bg-light">
             <div class="container icons-list">
                 <div class="swiper-container" data-sw-show-items="5" data-sw-space-between="30" data-sw-autoplay="2500"
                     data-sw-loop="true">
@@ -663,8 +810,9 @@
                     </div>
                 </div>
             </div>
-        </section><!-- ./Join - As Developer/Designer -->
-        <section class="section bg-light">
+        </section> -->
+        <!-- ./Join - As Developer/Designer -->
+        <!-- <section class="section bg-light">
             <div class="container bring-to-front py-0">
                 <div class="shadow bg-contrast p-5 rounded">
                     <div class="row gap-y align-items-center text-center text-lg-start">
@@ -689,48 +837,146 @@
                     </div>
                 </div>
             </div>
-        </section><!-- ./CTA - Create Account -->
-        <section class="section bg-contrast edge top-left b-b">
+        </section> -->
+        <!-- ./Lightweight HTML - Big screen right -->
+        <section class="section">
+            <div class="container-wide">
+                <div class="row gap-y align-items-center text-center text-lg-start">
+                    <div class="col-10 col-lg-4 mx-auto">
+                        <div class="mb-5">
+                            <h2>Area wise Results and statistics</h2>
+                            <p class="lead text-secondary">View UC and area wise results using Agrilytics.</p>
+                        </div>
+                        <p>The user can view all the result and statistics of the selected region in the home page here.
+                            The results are generated using our algorithms.
+                            The following figure shows the results view of the web-based application of beta version.
+                            The image shows several stats of classified areas along with the colour (classified) image.
+                        </p>
+                        <!-- <a href="#"
+                            class="btn btn-info text-contrast btn-rounded mt-4">Learn More</a> -->
+                    </div>
+                    <div class="col-12 col-lg-6 pe-0"><img src="img/dash1.jpg" alt="" class="img-responsive shadow"
+                            data-aos="fade-left"></div>
+                </div>
+            </div>
+        </section>
+        <br>
+        <section id="contact_us" class="section bg-light">
+            <div class="container-fluid py-3 demo-blocks">
+                <!-- ./Contact -->
+                <section class="section block bg-contrast">
+                    <div class="container py-4">
+                        <div class="row gap-y">
+                            <div class="col-12 col-md-6">
+                                <div class="section-heading">
+                                    <p class="text-uppercase">Get in touch</p>
+                                    <h2 class="font-md bold">We'd like to hear from you</h2>
+                                </div>
+                                <p class="lead mb-5">Don't hesitate to get in contact with us no matter your request. We
+                                    are here to help you.</p>
+                                <ul class="list-unstyled list-icon">
+                                    <li><i class="fas fa-map-marker text-primary"></i>
+                                        <p>National Center for Big Data and Cloud Computing, UET Peshawar</p>
+                                    </li>
+                                    <li><i class="fas fa-phone text-primary"></i>
+                                        <p>+92-3457199917</p>
+                                    </li>
+                                    <li><i class="fas fa-envelope text-primary"></i>
+                                        <p><a href="mailto:support@5studios.net">contact@agrilytics.com</a></p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <h2 class="font-md bold">Contact Us</h2>
+                                <form action="srv/contact.php" method="post" class="form form-contact"
+                                    name="form-contact" data-response-message-animation="slide-in-up">
+                                    <div class="mb-4"><label for="contact_email" class="text-dark bold mb-0">Email
+                                            address</label>
+                                        <div id="emailHelp" class="small form-text text-secondary mt-0 mb-2 italic">
+                                            We'll never share your email with anyone else.</div><input type="email"
+                                            name="Contact[email]" id="contact_email" class="form-control bg-contrast"
+                                            placeholder="Valid Email" required>
+                                    </div>
+                                    <div class="mb-4"><label for="contact_email" class="text-dark bold">Subject</label>
+                                        <input type="text" name="Contact[subject]" id="contact_subject"
+                                            class="form-control bg-contrast" placeholder="Subject" required>
+                                    </div>
+                                    <div class="mb-4"><label for="contact_email" class="text-dark bold">Message</label>
+                                        <textarea name="Contact[message]" id="contact_message"
+                                            class="form-control bg-contrast"
+                                            placeholder="What do you want to let us know?" rows="8" required></textarea>
+                                    </div>
+                                    <div class="d-grid gap-2"><button id="contact-submit" data-loading-text="Sending..."
+                                            name="submit" type="submit" class="btn btn-primary btn-rounded">Send
+                                            Message</button></div>
+                                </form>
+                                <div class="response-message">
+                                    <div class="section-heading"><i class="fas fa-check font-lg"></i>
+                                        <p class="font-md m-0">Thank you!</p>
+                                        <p class="response">Your message has been send, we will contact you as soon as
+                                            possible.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <!-- ./CTA - Create Account -->
+        <section class="section bg-contrast edge  b-b">
             <div class="container pt-5">
                 <div class="d-flex align-items-center flex-column flex-md-row">
                     <div class="text-center text-md-start">
                         <p class="light mb-0 text-primary lead">Ready to get started?</p>
                         <h2 class="mt-0 bold">Create an account now</h2>
-                    </div><a href="register.html" class="btn btn-primary btn-rounded mt-3 mt-md-0 ms-md-auto">Create
-                        DashCore account</a>
+                    </div>
+                    <a class="btn btn-primary btn-rounded mt-3 mt-md-0 ms-md-auto modal-popup" href="#signup-model"
+                        data-effect="mfp-newspaper">SignUp</a>
+                    <!-- <a class="btn btn-rounded btn-solid px-3 modal-popup" href="#signup-model"
+                        data-effect="mfp-newspaper">
+                        <i class="fas fa-user-plus d-none d-md-inline me-md-0 me-lg-2"></i>
+                        <span class="d-md-none d-lg-inline">Signup</span>
+                    </a> -->
                 </div>
             </div>
         </section><!-- ./Footer - Four Columns -->
         <footer class="site-footer section">
             <div class="container pb-3">
                 <div class="row gap-y text-center text-md-start">
-                    <div class="col-md-4 me-auto"><img src="img/logo.png" alt="" class="logo">
-                        <p>DashCore, a carefully crafted and powerful HTML5 template, it's perfect to showcase your
-                            startup or software</p>
+                    <div class="col-md-4 me-auto"><img src="img/logos/agri_logo.png" alt="" class="logo">
+                        <p>Bringing Ai into Agriculture with Agrilytics</p>
                     </div>
                     <div class="col-md-2">
-                        <h6 class="py-2 bold text-uppercase">Company</h6>
-                        <nav class="nav flex-column"><a class="nav-item py-2" href="about.html">About</a> <a
-                                class="nav-item py-2" href="#">Services</a> <a class="nav-item py-2"
-                                href="blog/blog-grid.html">Blog</a></nav>
-                    </div>
-                    <div class="col-md-2">
-                        <h6 class="py-2 bold text-uppercase">Product</h6>
-                        <nav class="nav flex-column"><a class="nav-item py-2" href="#">Features</a> <a
-                                class="nav-item py-2" href="#">API</a> <a class="nav-item py-2" href="#">Customers</a>
+                        <h6 class="py-2 bold text-uppercase">Quick Links</h6>
+                        <nav class="nav flex-column"><a class="nav-item py-2" href="about.html">Home</a>
+                            <a class="nav-item py-2" href="#">About</a>
+                            <a class="nav-item py-2" href="blog/blog-grid.html">Features</a>
+                            <a class="nav-item py-2" href="blog/blog-grid.html">Contact Us</a>
                         </nav>
                     </div>
                     <div class="col-md-2">
-                        <h6 class="py-2 bold text-uppercase">Channels</h6>
-                        <nav class="nav flex-column"><a class="nav-item py-2" href="#">Careers</a> <a
-                                class="nav-item py-2" href="#">Contact</a> <a class="nav-item py-2" href="#">Search</a>
+                        <h6 class="py-2 bold text-uppercase">Our Products</h6>
+                        <nav class="nav flex-column"><a class="nav-item py-2" href="https://geofenceattendance.com/"
+                                target="_blank">Geofence Attendance</a>
+                            <!-- <a class="nav-item py-2" href="#">API</a>  -->
+                            <a class="nav-item py-2" href="https://www.geosurveyapp.com/"
+                                target="_blank">Geosurveyapp</a>
+                        </nav>
+                    </div>
+                    <div class="col-md-2">
+                        <h6 class="py-2 bold text-uppercase">Legal</h6>
+                        <nav class="nav flex-column"><a class="nav-item py-2" href="#">Privacy Policy</a>
+                            <!-- <a class="nav-item py-2" href="#">Contact</a> 
+                                <a class="nav-item py-2" href="#">Search</a> -->
                         </nav>
                     </div>
                 </div>
                 <hr class="mt-5">
                 <div class="row small align-items-center">
                     <div class="col-md-4">
-                        <p class="mt-2 mb-md-0 text-secondary text-center text-md-start">© 2021 5studios. All Rights
+                        <p class="mt-2 mb-md-0 text-secondary text-center text-md-start">© 2023 agrilytics. All Rights
                             Reserved</p>
                     </div>
                     <div class="col-md-8">
